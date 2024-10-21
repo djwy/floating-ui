@@ -77,7 +77,7 @@ export interface MiddlewareData {
     referenceHiddenOffsets?: SideObject;
     escapedOffsets?: SideObject;
   };
-  offset?: Coords & {placement: Placement};
+  offset?: Coords & {placement?: Placement};
   shift?: Coords & {
     enabled: {[key in Axis]: boolean};
   };
